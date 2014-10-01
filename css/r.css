@@ -163,10 +163,10 @@ body {
 
 .header {
   position: relative;
-  height: 90px;
+  min-height: 90px;
   border-bottom: 2px solid #0033ff;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.75);
-  background: url(../img/fig11.png) repeat-x 0 0 white;
+  background: url(../img/fig11.png) repeat-x 0 0 #ffce3b;
 }
 
 .logo {
@@ -196,6 +196,31 @@ body {
   font-size: 12px;
   font-style: italic;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+.login {
+  float: right;
+  margin-top: 15px;
+}
+.login_img {
+  display: block;
+  margin: 0 auto 5px;
+}
+.login_link {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1;
+  margin-bottom: 4px;
+  padding-bottom: 1px;
+  border-bottom: 1px dashed #fff;
+}
+.login_link:hover, .login_link:active, .login_link:focus {
+  text-decoration: none;
+  border-bottom-style: solid;
+  border-bottom-color: #e6e6e6;
+  color: #e6e6e6;
 }
 
 /*# sourceMappingURL=r.css.map */
