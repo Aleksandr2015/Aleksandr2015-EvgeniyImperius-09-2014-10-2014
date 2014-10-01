@@ -223,30 +223,29 @@ body {
   color: #e6e6e6;
 }
 
+#checker {
+  display: none;
+}
+
 .cart {
   position: relative;
   float: right;
   margin: 10px 7px 0;
 }
-
-#checker {
-  display: none;
-}
-
-.cart-visible {
+.cart_visible {
   width: 110px;
   height: 70px;
   background: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
 }
-.cart-visible_basket {
+.cart_visible_basket {
   display: inline-block;
   width: 55px;
   height: 43px;
   background: white url(../img/fig3.png) no-repeat right 0;
 }
-.cart-visible_basket_items {
+.cart_visible_basket_items {
   display: inline-block;
   color: #ffffff;
   font-size: 14px;
@@ -260,7 +259,7 @@ body {
   top: 4px;
   left: 16px;
 }
-.cart-visible_total {
+.cart_visible_total {
   display: inline-block;
   font-size: 18px;
   font-weight: 700;
@@ -268,23 +267,24 @@ body {
   top: 17px;
   left: -5px;
 }
-.cart-visible_label {
+.cart_visible_label {
   display: block;
   cursor: pointer;
   text-align: center;
   font-size: 14px;
   font-weight: 400;
+  margin: 0;
 }
-.cart-visible_label:before {
+.cart_visible_label:before {
   content: 'Подробнее';
   display: inline-block;
   line-height: 1.1;
   border-bottom: 1px dashed #000;
 }
-#checker:checked ~ .cart-visible .cart-visible_label:before {
+#checker:checked ~ .cart_visible .cart_visible_label:before {
   content: 'Свернуть';
 }
-.cart-visible_label:after {
+.cart_visible_label:after {
   content: '';
   display: inline-block;
   width: 0;
@@ -294,9 +294,28 @@ body {
   border-width: 7px 4px 0;
   margin-left: 3px;
 }
-#checker:checked ~ .cart-visible .cart-visible_label:after {
+#checker:checked ~ .cart_visible .cart_visible_label:after {
   border-color: transparent transparent #996600;
   border-width: 0 4px 7px;
+}
+.cart_hidden {
+  visibility: hidden;
+  opacity: 0;
+  width: 670px;
+  height: 200px;
+  background: #ccc;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  transition: all 0.3s;
+  pointer-events: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+#checker:checked ~ .cart_hidden {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /*# sourceMappingURL=r.css.map */
