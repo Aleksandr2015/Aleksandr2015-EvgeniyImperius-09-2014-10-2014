@@ -1,3 +1,29 @@
+/*
+%bg-footer{
+    background: -webkit-linear-gradient(90deg, #996600 0%, #cc9900 78%, #ffcc33 100%);
+    background: -moz-linear-gradient(90deg, #996600 0%, #cc9900 78%, #ffcc33 100%);
+    background: -o-linear-gradient(90deg, #996600 0%, #cc9900 78%, #ffcc33 100%);
+    background: -ms-linear-gradient(90deg, #996600 0%, #cc9900 78%, #ffcc33 100%);
+    background: linear-gradient(0deg, #996600 0%, #cc9900 78%, #ffcc33 100%);
+}
+
+
+%nav-bg{
+    background: -webkit-linear-gradient(90deg, #ffffff 0%, #fff1c8 27%, #ffcc33 100%);
+    background: -moz-linear-gradient(90deg, #ffffff 0%, #fff1c8 27%, #ffcc33 100%);
+    background: -o-linear-gradient(90deg, #ffffff 0%, #fff1c8 27%, #ffcc33 100%);
+    background: -ms-linear-gradient(90deg, #ffffff 0%, #fff1c8 27%, #ffcc33 100%);
+    background: linear-gradient(0deg, #ffffff 0%, #fff1c8 27%, #ffcc33 100%);
+}
+
+%nav-bg-hover{
+    background: -webkit-linear-gradient(90deg, #ffffff 0%, #e3f1ff 27%, #99ccff 100%);
+    background: -moz-linear-gradient(90deg, #ffffff 0%, #e3f1ff 27%, #99ccff 100%);
+    background: -o-linear-gradient(90deg, #ffffff 0%, #e3f1ff 27%, #99ccff 100%);
+    background: -ms-linear-gradient(90deg, #ffffff 0%, #e3f1ff 27%, #99ccff 100%);
+    background: linear-gradient(0deg, #ffffff 0%, #e3f1ff 27%, #99ccff 100%);
+}
+*/
 /* cyrillic */
 @font-face {
   font-family: 'Roboto';
@@ -128,10 +154,25 @@
 }
 body {
   font-family: Roboto, sans-serif;
+  color: #000;
 }
 
 .container {
   width: 1280px;
+}
+
+.header {
+  position: relative;
+  height: 85px;
+  border-bottom: 2px solid #0033ff;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.75);
+  background: url(../img/fig11.png) repeat-x 0 0 white;
+}
+
+.logo {
+  display: block;
+  height: 100%;
+  margin: auto;
 }
 
 /*# sourceMappingURL=r.css.map */
