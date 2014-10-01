@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 %bg-footer{
     background: -webkit-linear-gradient(90deg, #996600 0%, #cc9900 78%, #ffcc33 100%);
@@ -163,7 +164,7 @@ body {
 
 .header {
   position: relative;
-  min-height: 90px;
+  height: 90px;
   border-bottom: 2px solid #0033ff;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.75);
   background: url(../img/fig11.png) repeat-x 0 0 #ffce3b;
@@ -218,9 +219,69 @@ body {
 }
 .login_link:hover, .login_link:active, .login_link:focus {
   text-decoration: none;
-  border-bottom-style: solid;
   border-bottom-color: #e6e6e6;
   color: #e6e6e6;
+}
+
+.cart {
+  position: relative;
+  float: right;
+}
+
+#checker {
+  display: none;
+}
+
+.cart-visible {
+  width: 110px;
+  height: 70px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+.cart-visible_basket {
+  display: inline-block;
+  width: 55px;
+  height: 43px;
+  background: white url(../img/fig3.png) no-repeat right 0;
+}
+.cart-visible_basket_items {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  width: 20px;
+  height: 20px;
+  background: #ff0000;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  top: 4px;
+  left: 16px;
+}
+.cart-visible_total {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  top: 17px;
+  left: -5px;
+}
+.cart-visible_label {
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 1px;
+  border-bottom: 1px dashed #000;
+}
+.cart-visible_label:before {
+  content: 'Подробнее';
+  display: inline-block;
+}
+#checker:checked ~ .cart-visible .cart-visible_label:before {
+  content: 'Свернуть';
 }
 
 /*# sourceMappingURL=r.css.map */

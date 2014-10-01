@@ -1,109 +1,127 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Index</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Index</title>
 
-    <!--CSS-->
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/r.css">
-    <link rel="stylesheet" href="css/s.css">
+        <!--CSS-->
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/r.css">
+        <link rel="stylesheet" href="css/s.css">
 
-</head>
-<body>
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+    </head>
+    <body>
 
-
-<!--Header-->
-<header class="header">
-   <div class="container">
-        <div class="row">
-
-            <!--Cart-->
-
-
-            <!--Log In-->
-                <div class="login">
-                    <img class="login_img" src="img/fig2.png" alt="photo">
-                    <a class="login_link" href="#" title="Log in" data-toggle="modal" data-target="#myModal">Авторизация</a>
-                    <a class="login_link" href="#" title="Sign up" data-toggle="modal" data-target="#myModal">Регистрация</a>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
                 </div>
-
-
-            <!--Logo-->
-            <a href="#" class="logo" title='Main P'>
-                <img class="logo_img" src="img/fig1.png" alt="logo">
-                <span class="logo_title">
-                    <span class="logo_title_text1">Круг Посвященных</span>
-                    <br>
-                    <span class="logo_title_text2">Ежеквартальный сборник Клуба Эффективных Лидеров</span>
-                </span>
-            </a>
-
+            </div>
         </div>
-   </div>
-</header>
 
-<!--Navigation-->
-<nav></nav>
 
-<!--Carousel-->
-<div class="container">
-    <div class="row"></div>
-</div>
+        <!--Header-->
+        <header class="header">
+            <div class="container">
+                <div class="row">
 
-<!--Slider + Projects-->
-<div class="container">
-    <div class="row"></div>
-</div>
+                    <!--Cart-->
+                    <div class="cart">
+                        <input id='checker' type="checkbox">
 
-<!--Panel-->
-<div class="container">
-    <div class="row"></div>
-</div>
+                        <!--visible part-->
+                        <div class="cart-visible">
+                            <!--items in basket-->
+                            <div class="cart-visible_basket">
+                                <div class="cart-visible_basket_items">2</div>
+                            </div>
+                            <!--total sum-->
+                            <div class="cart-visible_total">140 €</div>
+                            <!--show more-->
+                            <label class="cart-visible_label" for="checker"></label>
+                        </div>
 
-<!--Price cards-->
-<div class="container">
-    <div class="row"></div>
-</div>
+                        <!--hidden part-->
+                        <div class="cart-hidden"></div>
+                    </div>
 
-<!--Just text-->
-<div class="container">
-    <div class="row"></div>
-</div>
+                    <!--Log In-->
+                    <div class="login">
+                        <img class="login_img" src="img/fig2.png" alt="photo">
+                        <a class="login_link" href="#" title="Log in" data-toggle="modal" data-target="#myModal">Авторизация</a>
+                        <a class="login_link" href="#" title="Sign up" data-toggle="modal" data-target="#myModal">Регистрация</a>
+                    </div>
 
-<!--Footer-->
-<footer class="footer">
-    <div class="container">
-        <div class="row"></div>
-    </div>
-</footer>
 
-<!--Scripts-->
+                    <!--Logo-->
+                    <a href="#" class="logo" title='Main P'>
+                        <img class="logo_img" src="img/fig1.png" alt="logo">
+                        <span class="logo_title">
+                            <span class="logo_title_text1">Круг Посвященных</span>
+                            <br>
+                            <span class="logo_title_text2">Ежеквартальный сборник Клуба Эффективных Лидеров</span>
+                        </span>
+                    </a>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<!--Boo js-->
-<script src='vendor/bootstrap/js/bootstrap.min.js'></script>
+                </div>
+            </div>
+        </header>
 
-</body>
+        <!--Navigation-->
+        <nav></nav>
+
+        <!--Carousel-->
+        <div class="container">
+            <div class="row"></div>
+        </div>
+
+        <!--Slider + Projects-->
+        <div class="container">
+            <div class="row"></div>
+        </div>
+
+        <!--Panel-->
+        <div class="container">
+            <div class="row"></div>
+        </div>
+
+        <!--Price cards-->
+        <div class="container">
+            <div class="row"></div>
+        </div>
+
+        <!--Just text-->
+        <div class="container">
+            <div class="row"></div>
+        </div>
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="container">
+                <div class="row"></div>
+            </div>
+        </footer>
+
+        <!--Scripts-->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!--Boo js-->
+        <script src='vendor/bootstrap/js/bootstrap.min.js'></script>
+
+    </body>
 </html>
