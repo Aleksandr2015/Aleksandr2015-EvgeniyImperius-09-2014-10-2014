@@ -456,13 +456,12 @@ body {
 .navi {
   display: table;
   table-layout: fixed;
-  width: 1360px;
+  width: 1330px;
   margin: auto;
   text-align: center;
   position: relative;
   right: 80px;
   z-index: 1;
-  padding: 0 15px;
 }
 .navi_item {
   position: relative;
