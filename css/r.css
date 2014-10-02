@@ -130,6 +130,8 @@
 body {
   font-family: Roboto, sans-serif;
   color: #000;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .container {
@@ -627,6 +629,10 @@ body {
   text-align: center;
   min-height: 315px;
   width: 240px;
+}
+.card:hover, .card:active, .card:focus {
+  box-shadow: 0 0 10px #ffcc33;
+  border-color: #ffcc33;
 }
 .card_img {
   height: 170px;
