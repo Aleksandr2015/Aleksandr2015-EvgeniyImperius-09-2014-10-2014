@@ -407,4 +407,47 @@ body {
   background: url(../img/fig15.png) repeat-x 0 0 #ffce3b;
 }
 
+.tech-support {
+  display: inline-block;
+}
+.tech-support.-footer {
+  float: left;
+  margin-top: 10px;
+}
+.tech-support_text1 {
+  font-size: 12px;
+  font-weight: 700;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75);
+}
+.tech-support_text2, .tech-support_text3, .pay-way_text {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+.copyright {
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
+}
+.copyright.-footer {
+  display: block;
+  width: 300px;
+  margin: 20px auto 0;
+}
+
+.pay-way {
+  display: inline-block;
+}
+.pay-way.-footer {
+  float: right;
+  margin-top: 10px;
+}
+.pay-way_img {
+  text-align: center;
+}
+
 /*# sourceMappingURL=r.css.map */
