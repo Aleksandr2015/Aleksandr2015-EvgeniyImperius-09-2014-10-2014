@@ -138,7 +138,7 @@ body {
 
 .header {
   position: relative;
-  height: 90px;
+  height: 93px;
   border-bottom: 2px solid #0033ff;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.75);
   background: url(../img/fig11.png) repeat-x 0 0 #ffce3b;
@@ -448,6 +448,21 @@ body {
 }
 .pay-way_img {
   text-align: center;
+}
+
+.nav {
+  display: table;
+  table-layout: fixed;
+  width: 1280px;
+  text-align: center;
+}
+.nav_item {
+  display: table-cell;
+  vertical-align: middle;
+}
+.nav_item_link {
+  display: block;
+  position: relative;
 }
 
 /*# sourceMappingURL=r.css.map */
