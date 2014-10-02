@@ -618,6 +618,7 @@ body {
 }
 
 .card {
+  display: inline-block;
   border-width: 1px;
   border-color: #cccccc;
   border-style: solid;
@@ -645,6 +646,19 @@ body {
   color: #ffcc33;
   font-size: 36px;
   font-weight: 700;
+}
+
+.card-grid {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: auto;
+}
+.card-grid_item {
+  float: left;
+}
+.card-grid.-col5 .card-grid_item:not(:nth-child(5n)) {
+  margin-right: calc((100% - (240px * 5)) / 4);
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=r.css.map */
