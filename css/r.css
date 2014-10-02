@@ -667,4 +667,11 @@ body {
   margin-bottom: 10px;
 }
 
+.some-text {
+  margin: 0 auto 25px;
+}
+.some-text > p {
+  margin-bottom: 20px;
+}
+
 /*# sourceMappingURL=r.css.map */
