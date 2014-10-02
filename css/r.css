@@ -136,10 +136,6 @@ body {
   width: 1280px;
 }
 
-.container.-navi {
-  height: 110px;
-}
-
 .header {
   position: relative;
   min-width: 1280px;
@@ -152,7 +148,7 @@ body {
 
 .logo {
   display: block;
-  width: 400px;
+  width: 430px;
 }
 .logo.-header {
   margin-left: auto;
@@ -457,6 +453,10 @@ body {
   text-align: center;
 }
 
+.container.-h110 {
+  height: 110px;
+}
+
 .navi {
   display: table;
   table-layout: fixed;
@@ -532,6 +532,78 @@ body {
   background: -o-linear-gradient(90deg, white 0%, #e3f1ff 27%, #99ccff 100%);
   background: -ms-linear-gradient(90deg, white 0%, #e3f1ff 27%, #99ccff 100%);
   background: linear-gradient(0deg, white 0%, #e3f1ff 27%, #99ccff 100%);
+}
+
+.container.-m10 {
+  margin: 10px auto;
+}
+
+.our-projects {
+  position: relative;
+  width: 240px;
+  min-height: 220px;
+  padding: 7px 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #cccccc;
+  border-style: solid;
+  background: white url(../img/fig16.png) no-repeat center center;
+  background-size: cover;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+}
+.our-projects:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+.our-projects.-layout-for-main-page {
+  margin-left: 10px;
+  float: left;
+}
+.our-projects_wrap {
+  position: relative;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.4);
+}
+.our-projects_title {
+  font-size: 18px;
+  font-weight: 700;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75);
+  text-align: center;
+  min-height: 30px;
+  background: #ffcc33;
+  line-height: 1.6;
+}
+.our-projects_list {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0;
+}
+.our-projects_item {
+  line-height: 1.25;
+}
+.our-projects_item > a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
+  text-decoration: underline;
+}
+.our-projects_item > a:hover, .our-projects_item > a:active, .our-projects_item > a:focus {
+  color: #e6e6e6;
+}
+
+.slider {
+  width: 1000px;
+  min-height: 220px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+  float: left;
 }
 
 /*# sourceMappingURL=r.css.map */
