@@ -175,6 +175,9 @@ body {
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
 }
 
+.login {
+  display: inline-block;
+}
 .login.-header {
   float: right;
   margin: 13px 20px 0;
@@ -205,6 +208,7 @@ body {
 
 .cart {
   position: relative;
+  display: inline-block;
 }
 .cart.-header {
   float: right;
@@ -395,6 +399,12 @@ body {
   font-size: 18px;
   padding: 11px 17px;
   top: 50px;
+}
+
+.footer {
+  position: relative;
+  height: 68px;
+  background: url(../img/fig15.png) repeat-x 0 0 #ffce3b;
 }
 
 /*# sourceMappingURL=r.css.map */
