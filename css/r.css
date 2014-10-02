@@ -142,6 +142,7 @@ body {
   border-bottom: 2px solid #0033ff;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.75);
   background: url(../img/fig11.png) repeat-x 0 0 #ffce3b;
+  z-index: 2;
 }
 
 .logo {
@@ -450,19 +451,59 @@ body {
   text-align: center;
 }
 
-.nav {
+.navi {
   display: table;
   table-layout: fixed;
-  width: 1280px;
+  width: 1360px;
+  margin-left: -80px;
   text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 0 15px;
 }
-.nav_item {
+.navi_item {
+  position: relative;
   display: table-cell;
   vertical-align: middle;
+  height: 60px;
+  padding: 0 12px;
+  border-width: 1px;
+  border-color: #cccccc;
+  border-style: solid;
+  background-color: #ffffff;
+  background: -webkit-linear-gradient(90deg, white 0%, #fff1c8 27%, #ffcc33 100%);
+  background: -moz-linear-gradient(90deg, white 0%, #fff1c8 27%, #ffcc33 100%);
+  background: -o-linear-gradient(90deg, white 0%, #fff1c8 27%, #ffcc33 100%);
+  background: -ms-linear-gradient(90deg, white 0%, #fff1c8 27%, #ffcc33 100%);
+  background: linear-gradient(0deg, white 0%, #fff1c8 27%, #ffcc33 100%);
+  box-shadow: 0px 0px 10px 0px rgba(153, 102, 0, 0.75);
 }
-.nav_item_link {
-  display: block;
-  position: relative;
+.navi_item:nth-child(1) {
+  left: 80px;
+}
+.navi_item:nth-child(2) {
+  left: 70px;
+}
+.navi_item:nth-child(3) {
+  left: 60px;
+}
+.navi_item:nth-child(4) {
+  left: 50px;
+}
+.navi_item:nth-child(5) {
+  left: 40px;
+}
+.navi_item:nth-child(6) {
+  left: 30px;
+}
+.navi_item:nth-child(7) {
+  left: 20px;
+}
+.navi_item:nth-child(8) {
+  left: 10px;
+}
+.navi_item:hover, .navi_item:active, .navi_item:focus {
+  z-index: 1;
 }
 
 /*# sourceMappingURL=r.css.map */
