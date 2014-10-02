@@ -138,6 +138,7 @@ body {
 
 .header {
   position: relative;
+  min-width: 1280px;
   height: 93px;
   border-bottom: 2px solid #0033ff;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.75);
@@ -406,6 +407,7 @@ body {
   position: relative;
   height: 68px;
   background: url(../img/fig15.png) repeat-x 0 0 #ffce3b;
+  min-width: 1280px;
 }
 
 .tech-support {
