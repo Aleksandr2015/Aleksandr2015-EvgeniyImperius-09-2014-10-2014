@@ -136,6 +136,10 @@ body {
   width: 1280px;
 }
 
+.container.-navi {
+  height: 110px;
+}
+
 .header {
   position: relative;
   min-width: 1280px;
@@ -467,8 +471,9 @@ body {
   position: relative;
   display: table-cell;
   vertical-align: middle;
-  height: 60px;
-  padding: 0 12px;
+  height: 90px;
+  padding: 17px 12px 0;
+  top: -15px;
   color: #666;
   font-size: 14px;
   font-weight: 400;
@@ -514,6 +519,8 @@ body {
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
+  top: 0;
+  padding: 0 12px;
 }
 
 /*# sourceMappingURL=r.css.map */
