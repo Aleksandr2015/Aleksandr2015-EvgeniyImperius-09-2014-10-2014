@@ -600,14 +600,6 @@ body {
   color: #e6e6e6;
 }
 
-.slider {
-  width: 1000px;
-  min-height: 220px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
-  float: left;
-}
-
 .panell {
   border-radius: 5px;
   background-color: #7f7f7f;
@@ -672,6 +664,40 @@ body {
 }
 .some-text > p {
   margin-bottom: 20px;
+}
+
+.slider {
+  width: 1000px;
+  height: 220px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+  float: left;
+}
+
+.carousel {
+  height: 100%;
+}
+
+.carousel-indicators {
+  left: auto;
+  right: 15px;
+  bottom: 15px;
+  margin-left: 0;
+  margin-bottom: 0;
+  width: auto;
+}
+
+.carousel-indicators li, .carousel-indicators .active {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
+  width: 14px;
+  height: 14px;
+  margin: 1px 1px 1px 5px;
+}
+
+.carousel-indicators .active {
+  background-color: #464646;
+  border-color: #464646;
+  box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75);
 }
 
 /*# sourceMappingURL=r.css.map */
