@@ -1,30 +1,4 @@
 @charset "UTF-8";
-/*
-%bg-footer{
-    background: -webkit-linear-gradient(90deg, #996600 0%, #cc9900 78%, #ffcc33 100%);
-    background: -moz-linear-gradient(90deg, #996600 0%, #cc9900 78%, #ffcc33 100%);
-    background: -o-linear-gradient(90deg, #996600 0%, #cc9900 78%, #ffcc33 100%);
-    background: -ms-linear-gradient(90deg, #996600 0%, #cc9900 78%, #ffcc33 100%);
-    background: linear-gradient(0deg, #996600 0%, #cc9900 78%, #ffcc33 100%);
-}
-
-
-%nav-bg{
-    background: -webkit-linear-gradient(90deg, #ffffff 0%, #fff1c8 27%, #ffcc33 100%);
-    background: -moz-linear-gradient(90deg, #ffffff 0%, #fff1c8 27%, #ffcc33 100%);
-    background: -o-linear-gradient(90deg, #ffffff 0%, #fff1c8 27%, #ffcc33 100%);
-    background: -ms-linear-gradient(90deg, #ffffff 0%, #fff1c8 27%, #ffcc33 100%);
-    background: linear-gradient(0deg, #ffffff 0%, #fff1c8 27%, #ffcc33 100%);
-}
-
-%nav-bg-hover{
-    background: -webkit-linear-gradient(90deg, #ffffff 0%, #e3f1ff 27%, #99ccff 100%);
-    background: -moz-linear-gradient(90deg, #ffffff 0%, #e3f1ff 27%, #99ccff 100%);
-    background: -o-linear-gradient(90deg, #ffffff 0%, #e3f1ff 27%, #99ccff 100%);
-    background: -ms-linear-gradient(90deg, #ffffff 0%, #e3f1ff 27%, #99ccff 100%);
-    background: linear-gradient(0deg, #ffffff 0%, #e3f1ff 27%, #99ccff 100%);
-}
-*/
 /* cyrillic */
 @font-face {
   font-family: 'Roboto';
@@ -314,7 +288,6 @@ body {
   visibility: hidden;
   opacity: 0;
   width: 670px;
-  height: 200px;
   background: #fff;
   position: absolute;
   z-index: 1;
@@ -329,6 +302,51 @@ body {
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+}
+.cart_hidden_table {
+  float: left;
+  margin: 0 10px 20px 20px;
+}
+.cart_hidden_table table {
+  width: 520px;
+}
+.cart_hidden_table thead th div {
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 500;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.cart_hidden_table thead th:first-child div {
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  padding-left: 15px;
+  text-align: left;
+}
+.cart_hidden_table tbody tr td.divider {
+  height: 10px;
+}
+.cart_hidden_table tbody tr td div {
+  font-size: 14px;
+  font-weight: 500;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px dashed #ccc;
+  border-bottom: 1px dashed #ccc;
+  text-align: center;
+}
+.cart_hidden_table tbody tr td:first-child div {
+  padding-left: 15px;
+  border-left: 1px dashed #ccc;
+  border-radius: 5px 0 0 5px;
+  text-align: left;
+}
+.cart_hidden_table tbody tr td:last-child div {
+  padding-right: 15px;
+  border-right: 1px dashed #ccc;
+  border-radius: 0 5px 5px 0;
 }
 
 /*# sourceMappingURL=r.css.map */
