@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>seminar</title>
+
+        <!--CSS-->
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/r.css">
+        <link rel="stylesheet" href="css/s.css">
+
+    </head>
+    <body>
+
+        <!--Header-->
+        <header class="header">
+            <div class="container">
+
+                    <!--Cart-->
+                    <div class="[ cart -header ]">
+                        <input id='checker' type="checkbox">
+
+                        <!--visible part-->
+                        <div class="cart_visible">
+                            <!--items in basket-->
+                            <div class="cart_visible_basket">
+                                <div class="cart_visible_basket_items">2</div>
+                            </div>
+                            <!--total sum-->
+                            <div class="cart_visible_total">140 €</div>
+                            <!--show more-->
+                            <label class="cart_visible_label" for="checker"></label>
+                        </div>
+
+                        <!--hidden part-->
+                        <div class="cart_hidden">
+                           <!--table-->
+                            <div class="cart_hidden_table">
+                                <table>
+                                   <thead>
+                                        <tr>
+                                            <th><div>Ваши покупки</div></th>
+                                            <th><div>Цена, €</div></th>
+                                            <th><div>Кол-во</div></th>
+                                            <th><div>Итого, €</div></th>
+                                            <th></th>
+                                        </tr>
+                                   </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><div>Курс 2 для личностного роста</div></td>
+                                            <td><div>140</div></td>
+                                            <td><div>1</div></td>
+                                            <td><div>140</div></td>
+                                            <td><div>Х</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="divider"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div>Запись семинара</div></td>
+                                            <td><div>10</div></td>
+                                            <td><div>1</div></td>
+                                            <td><div>10</div></td>
+                                            <td><div>Х</div></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--btn-->
+                            <div class="cart_hidden_btn">
+                                <a class="[ btn-cust -cart ]" href='#'>Оплатить</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--Log In-->
+                    <div class="[ login -header ]">
+                        <img class="login_img" src="img/fig2.png" alt="photo">
+                        <a class="login_link" href="#" title="Log in" data-toggle="modal" data-target="#myModal">Авторизация</a>
+                        <a class="login_link" href="#" title="Sign up" data-toggle="modal" data-target="#myModal">Регистрация</a>
+                    </div>
+
+
+                    <!--Logo-->
+                    <a href="#" class="[ logo -header ]" title='Main P'>
+                        <img class="logo_img" src="img/fig1.png" alt="logo">
+                        <span class="logo_title">
+                            <span class="logo_title_text1">Круг Посвященных</span>
+                            <br>
+                            <span class="logo_title_text2">Ежеквартальный сборник Клуба Эффективных Лидеров</span>
+                        </span>
+                    </a>
+
+            </div>
+        </header>
+
+        <!--Panel-->
+        <div class="container">
+            <div class="panell">Популярные записи семинаров:</div>
+        </div>
+
+        <!--Price cards-->
+        <div class="container [ card-grid -col5 ]">
+               <div class="card-grid_item">
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="img/fig8.png" alt="">
+                        </div>
+                        <div class="card_name">Технология карьеры</div>
+                        <div class="card_price">28€</div>
+                        <a class="btn-cust" href="#">Купить</a>
+                    </div>
+               </div>
+               <div class="card-grid_item">
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="img/fig8.png" alt="">
+                        </div>
+                        <div class="card_name">Технология карьеры</div>
+                        <div class="card_price">28€</div>
+                        <a class="btn-cust" href="#">Купить</a>
+                    </div>
+               </div>
+               <div class="card-grid_item">
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="img/fig8.png" alt="">
+                        </div>
+                        <div class="card_name">Технология карьеры</div>
+                        <div class="card_price">28€</div>
+                        <a class="btn-cust" href="#">Купить</a>
+                    </div>
+               </div>
+               <div class="card-grid_item">
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="img/fig8.png" alt="">
+                        </div>
+                        <div class="card_name">Технология карьеры</div>
+                        <div class="card_price">28€</div>
+                        <a class="btn-cust" href="#">Купить</a>
+                    </div>
+               </div>
+               <div class="card-grid_item">
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="img/fig8.png" alt="">
+                        </div>
+                        <div class="card_name">Технология карьеры</div>
+                        <div class="card_price">28€</div>
+                        <a class="btn-cust" href="#">Купить</a>
+                    </div>
+               </div>
+               <div class="card-grid_item">
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="img/fig8.png" alt="">
+                        </div>
+                        <div class="card_name">Технология карьеры</div>
+                        <div class="card_price">28€</div>
+                        <a class="btn-cust" href="#">Купить</a>
+                    </div>
+               </div>
+               <div class="card-grid_item">
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="img/fig8.png" alt="">
+                        </div>
+                        <div class="card_name">Технология карьеры</div>
+                        <div class="card_price">28€</div>
+                        <a class="btn-cust" href="#">Купить</a>
+                    </div>
+               </div>
+               <div class="card-grid_item">
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="img/fig8.png" alt="">
+                        </div>
+                        <div class="card_name">Технология карьеры</div>
+                        <div class="card_price">28€</div>
+                        <a class="btn-cust" href="#">Купить</a>
+                    </div>
+               </div>
+               <div class="card-grid_item">
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="img/fig8.png" alt="">
+                        </div>
+                        <div class="card_name">Технология карьеры</div>
+                        <div class="card_price">28€</div>
+                        <a class="btn-cust" href="#">Купить</a>
+                    </div>
+               </div>
+               <div class="card-grid_item">
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="img/fig8.png" alt="">
+                        </div>
+                        <div class="card_name">Технология карьеры</div>
+                        <div class="card_price">28€</div>
+                        <a class="btn-cust" href="#">Купить</a>
+                    </div>
+               </div>
+               <div class="card-grid_item">
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="img/fig8.png" alt="">
+                        </div>
+                        <div class="card_name">Технология карьеры</div>
+                        <div class="card_price">28€</div>
+                        <a class="btn-cust" href="#">Купить</a>
+                    </div>
+               </div>
+               <div class="card-grid_item">
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="img/fig8.png" alt="">
+                        </div>
+                        <div class="card_name">Технология карьеры</div>
+                        <div class="card_price">28€</div>
+                        <a class="btn-cust" href="#">Купить</a>
+                    </div>
+               </div>
+               <div class="card-grid_item">
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="img/fig8.png" alt="">
+                        </div>
+                        <div class="card_name">Технология карьеры</div>
+                        <div class="card_price">28€</div>
+                        <a class="btn-cust" href="#">Купить</a>
+                    </div>
+               </div>
+               <div class="card-grid_item">
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="img/fig8.png" alt="">
+                        </div>
+                        <div class="card_name">Технология карьеры</div>
+                        <div class="card_price">28€</div>
+                        <a class="btn-cust" href="#">Купить</a>
+                    </div>
+               </div>
+               <div class="card-grid_item">
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="img/fig8.png" alt="">
+                        </div>
+                        <div class="card_name">Технология карьеры</div>
+                        <div class="card_price">28€</div>
+                        <a class="btn-cust" href="#">Купить</a>
+                    </div>
+               </div>
+        </div>
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="container">
+               <!--tech-support-->
+                <div class="[ tech-support -footer ]">
+                    <div class="tech-support_text1">Техподдержка:</div>
+                    <div class="tech-support_text2">support.mediascan.ru</div>
+                    <div class="tech-support_text3">support@mediascan.ru</div>
+                </div>
+                <!--payments-->
+                <div class="[ pay-way -footer ]">
+                    <div class="pay-way_text">Принимаем к оплате:</div>
+                    <div class="pay-way_img">
+                        <img src="img/fig13.png" alt="pay">
+                    </div>
+                </div>
+                <!--copyright-->
+                <div class="[ copyright -footer ]">Copyright © Евгений Гильбо 1989 – 2014</div>
+            </div>
+        </footer>
+
+    </body>
+</html>
