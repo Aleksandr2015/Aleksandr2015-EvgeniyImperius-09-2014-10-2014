@@ -471,8 +471,8 @@ body {
   position: relative;
   display: table-cell;
   vertical-align: middle;
-  height: 90px;
-  padding: 17px 12px 0;
+  height: 80px;
+  padding: 18px 12px 0;
   top: -15px;
   color: #666;
   font-size: 14px;
@@ -519,8 +519,19 @@ body {
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
+  transition: all 0.3s;
   top: 0;
   padding: 0 12px;
+}
+.navi_item.active {
+  color: #000000;
+  text-shadow: 0px 1px 1px #ffffff;
+  background-color: #ffffff;
+  background: -webkit-linear-gradient(90deg, white 0%, #e3f1ff 27%, #99ccff 100%);
+  background: -moz-linear-gradient(90deg, white 0%, #e3f1ff 27%, #99ccff 100%);
+  background: -o-linear-gradient(90deg, white 0%, #e3f1ff 27%, #99ccff 100%);
+  background: -ms-linear-gradient(90deg, white 0%, #e3f1ff 27%, #99ccff 100%);
+  background: linear-gradient(0deg, white 0%, #e3f1ff 27%, #99ccff 100%);
 }
 
 /*# sourceMappingURL=r.css.map */
