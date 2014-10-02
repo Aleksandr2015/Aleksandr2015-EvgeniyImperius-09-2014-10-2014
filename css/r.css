@@ -348,6 +348,9 @@ body {
   border-right: 1px dashed #ccc;
   border-radius: 0 5px 5px 0;
 }
+.cart_hidden_btn {
+  float: left;
+}
 
 .btn-cust {
   display: inline-block;
@@ -387,6 +390,11 @@ body {
   height: 1px;
   margin-left: -46%;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.75);
+}
+.btn-cust.-cart {
+  font-size: 18px;
+  padding: 11px 17px;
+  top: 50px;
 }
 
 /*# sourceMappingURL=r.css.map */
