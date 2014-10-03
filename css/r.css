@@ -470,14 +470,13 @@ body {
   text-align: center;
   position: relative;
   z-index: 1;
-  overflow: auto;
 }
 .navi_item {
   position: relative;
   float: left;
   width: calc(100% / 9);
   min-height: 65px;
-  padding: 0 10px;
+  padding: 0 15px;
   color: #666;
   font-size: 14px;
   font-weight: 400;
@@ -499,13 +498,11 @@ body {
 }
 .navi_item:hover, .navi_item:active, .navi_item:focus {
   z-index: 1;
+  height: 80px;
   color: #666;
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
-  transition: all 0.3s;
-  top: 0;
-  padding: 0 12px;
 }
 .navi_item.active {
   color: #000000;
