@@ -708,6 +708,10 @@ body {
   border: none;
   box-shadow: none;
 }
+.tovar .file-list {
+  list-style: none;
+  padding: 0;
+}
 .tovar_content {
   float: left;
   width: calc(100% - 241px);
