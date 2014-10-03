@@ -371,10 +371,6 @@ body {
   height: 110px;
 }
 
-.container.-h85 {
-  height: 85px;
-}
-
 .btn-cust {
   display: inline-block;
   position: relative;
@@ -691,6 +687,31 @@ body {
 }
 .some-text > p {
   margin-bottom: 20px;
+}
+
+.container.-h85 {
+  height: 85px;
+}
+
+.tovar {
+  margin: 10px auto 70px;
+}
+.tovar_aside {
+  float: left;
+  width: 241px;
+}
+.tovar_aside .card.-tovar {
+  border: none;
+  box-shadow: none;
+}
+.tovar_aside .card.-tovar:hover, .tovar_aside .card.-tovar:active, .tovar_aside .card.-tovar:focus {
+  border: none;
+  box-shadow: none;
+}
+.tovar_content {
+  float: left;
+  width: calc(100% - 241px);
+  padding-left: 20px;
 }
 
 /*# sourceMappingURL=r.css.map */
