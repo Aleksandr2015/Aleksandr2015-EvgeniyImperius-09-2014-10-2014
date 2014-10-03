@@ -467,22 +467,17 @@ body {
 }
 
 .navi {
-  display: table;
-  table-layout: fixed;
-  width: 1330px;
-  margin: auto;
   text-align: center;
   position: relative;
-  right: 80px;
   z-index: 1;
+  overflow: auto;
 }
 .navi_item {
   position: relative;
-  display: table-cell;
-  vertical-align: middle;
-  height: 80px;
-  padding: 18px 12px 0;
-  top: -15px;
+  float: left;
+  width: calc(100% / 9);
+  min-height: 65px;
+  padding: 0 10px;
   color: #666;
   font-size: 14px;
   font-weight: 400;
@@ -498,29 +493,9 @@ body {
   background: linear-gradient(0deg, white 0%, #fff1c8 27%, #ffcc33 100%);
   box-shadow: 0px 0px 10px 0px rgba(153, 102, 0, 0.75);
 }
-.navi_item:nth-child(1) {
-  left: 80px;
-}
-.navi_item:nth-child(2) {
-  left: 70px;
-}
-.navi_item:nth-child(3) {
-  left: 60px;
-}
-.navi_item:nth-child(4) {
-  left: 50px;
-}
-.navi_item:nth-child(5) {
-  left: 40px;
-}
-.navi_item:nth-child(6) {
-  left: 30px;
-}
-.navi_item:nth-child(7) {
-  left: 20px;
-}
-.navi_item:nth-child(8) {
-  left: 10px;
+.navi_item:not(:first-child) {
+  width: calc((100% / 9) + 10px);
+  margin-left: -10px;
 }
 .navi_item:hover, .navi_item:active, .navi_item:focus {
   z-index: 1;
@@ -541,6 +516,86 @@ body {
   background: -o-linear-gradient(90deg, white 0%, #e3f1ff 27%, #99ccff 100%);
   background: -ms-linear-gradient(90deg, white 0%, #e3f1ff 27%, #99ccff 100%);
   background: linear-gradient(0deg, white 0%, #e3f1ff 27%, #99ccff 100%);
+}
+
+.panel-cust {
+  border-radius: 5px;
+  background-color: #7f7f7f;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
+  line-height: 1;
+  padding: 10px;
+}
+
+.card {
+  display: inline-block;
+  border-width: 1px;
+  border-color: #cccccc;
+  border-style: solid;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
+  text-align: center;
+  min-height: 315px;
+  width: 240px;
+}
+.card:hover, .card:active, .card:focus {
+  box-shadow: 0 0 10px #ffcc33;
+  border-color: #ffcc33;
+}
+.card_img {
+  height: 170px;
+  overflow: hidden;
+  text-align: center;
+}
+.card_img img {
+  max-width: 100%;
+  max-height: 170px;
+}
+.card_name {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+}
+.card_price {
+  color: #ffcc33;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.slider {
+  width: 1000px;
+  height: 220px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+  float: left;
+}
+
+.carousel {
+  height: 100%;
+}
+
+.carousel-indicators {
+  left: auto;
+  right: 15px;
+  bottom: 15px;
+  margin-left: 0;
+  margin-bottom: 0;
+  width: auto;
+}
+
+.carousel-indicators li, .carousel-indicators .active {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
+  width: 14px;
+  height: 14px;
+  margin: 1px 1px 1px 5px;
+}
+
+.carousel-indicators .active {
+  background-color: #464646;
+  border-color: #464646;
+  box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75);
 }
 
 .container.-m10 {
@@ -607,52 +662,6 @@ body {
   color: #e6e6e6;
 }
 
-.panel-cust {
-  border-radius: 5px;
-  background-color: #7f7f7f;
-  color: #ffffff;
-  font-size: 24px;
-  font-weight: 700;
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
-  line-height: 1;
-  padding: 10px;
-}
-
-.card {
-  display: inline-block;
-  border-width: 1px;
-  border-color: #cccccc;
-  border-style: solid;
-  background-color: #ffffff;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
-  text-align: center;
-  min-height: 315px;
-  width: 240px;
-}
-.card:hover, .card:active, .card:focus {
-  box-shadow: 0 0 10px #ffcc33;
-  border-color: #ffcc33;
-}
-.card_img {
-  height: 170px;
-  overflow: hidden;
-  text-align: center;
-}
-.card_img img {
-  max-width: 100%;
-  max-height: 170px;
-}
-.card_name {
-  color: #000;
-  font-size: 18px;
-  font-weight: 700;
-}
-.card_price {
-  color: #ffcc33;
-  font-size: 36px;
-  font-weight: 700;
-}
-
 .card-grid {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -671,40 +680,6 @@ body {
 }
 .some-text > p {
   margin-bottom: 20px;
-}
-
-.slider {
-  width: 1000px;
-  height: 220px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
-  float: left;
-}
-
-.carousel {
-  height: 100%;
-}
-
-.carousel-indicators {
-  left: auto;
-  right: 15px;
-  bottom: 15px;
-  margin-left: 0;
-  margin-bottom: 0;
-  width: auto;
-}
-
-.carousel-indicators li, .carousel-indicators .active {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
-  width: 14px;
-  height: 14px;
-  margin: 1px 1px 1px 5px;
-}
-
-.carousel-indicators .active {
-  background-color: #464646;
-  border-color: #464646;
-  box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75);
 }
 
 /*# sourceMappingURL=r.css.map */
