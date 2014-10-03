@@ -367,6 +367,14 @@ body {
   float: left;
 }
 
+.container.-h110 {
+  height: 110px;
+}
+
+.container.-h85 {
+  height: 85px;
+}
+
 .btn-cust {
   display: inline-block;
   position: relative;
@@ -460,10 +468,6 @@ body {
 }
 .pay-way_img {
   text-align: center;
-}
-
-.container.-h110 {
-  height: 110px;
 }
 
 .navi {
