@@ -475,7 +475,7 @@ body {
   position: relative;
   float: left;
   width: calc(100% / 9);
-  min-height: 65px;
+  height: 65px;
   padding: 0 15px;
   color: #666;
   font-size: 14px;
@@ -495,6 +495,16 @@ body {
 .navi_item:not(:first-child) {
   width: calc((100% / 9) + 10px);
   margin-left: -10px;
+}
+.navi_item:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.navi_item span {
+  display: inline-block;
+  vertical-align: middle;
 }
 .navi_item:hover, .navi_item:active, .navi_item:focus {
   z-index: 1;
