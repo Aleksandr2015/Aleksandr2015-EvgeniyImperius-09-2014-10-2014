@@ -710,7 +710,8 @@ body {
 }
 .tovar .file-list {
   list-style: none;
-  padding: 0;
+  padding-left: 40px;
+  margin: auto;
 }
 .tovar_content {
   float: left;
