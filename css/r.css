@@ -700,23 +700,48 @@ body {
   float: left;
   width: 241px;
 }
-.tovar_aside .card.-tovar {
-  border: none;
-  box-shadow: none;
-}
-.tovar_aside .card.-tovar:hover, .tovar_aside .card.-tovar:active, .tovar_aside .card.-tovar:focus {
-  border: none;
-  box-shadow: none;
-}
-.tovar .file-list {
-  list-style: none;
-  padding-left: 40px;
-  margin: auto;
-}
 .tovar_content {
   float: left;
   width: calc(100% - 241px);
   padding-left: 20px;
+}
+.tovar_content_preview {
+  font-style: italic;
+  color: #ffcc33;
+  margin-bottom: 15px;
+}
+.tovar_content_text {
+  margin-bottom: 15px;
+}
+.tovar_content_list_item {
+  margin-bottom: 15px;
+}
+
+.card.-tovar {
+  border: none;
+  box-shadow: none;
+}
+.card.-tovar:hover, .card.-tovar:active, .card.-tovar:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.file-list {
+  list-style: none;
+  padding-left: 40px;
+  margin: 25px auto;
+  text-align: left;
+}
+.file-list_title, .file-list_item > a {
+  color: #999;
+  font-weight: 700;
+  font-style: italic;
+}
+.file-list_item > a {
+  font-weight: 400;
+}
+.file-list_item > a:hover, .file-list_item > a:active, .file-list_item > a:focus {
+  color: #666666;
 }
 
 /*# sourceMappingURL=r.css.map */
