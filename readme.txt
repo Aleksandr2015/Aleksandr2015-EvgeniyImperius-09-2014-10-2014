@@ -49,3 +49,60 @@
 
 2
 .btn-cust (общ стили кнопки) + модификатор
+
+3
+Спрайт соц кнопок
+
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-fig17 {
+    width: 48px;
+    height: 55px;
+    background-position: -5px -5px;
+}
+
+.sprite-fig17-1 {
+    width: 48px;
+    height: 55px;
+    background-position: -63px -5px;
+}
+
+.sprite-fig18 {
+    width: 49px;
+    height: 55px;
+    background-position: -121px -5px;
+}
+
+.sprite-fig18-1 {
+    width: 49px;
+    height: 55px;
+    background-position: -180px -5px;
+}
+
+.sprite-fig19 {
+    width: 48px;
+    height: 55px;
+    background-position: -239px -5px;
+}
+
+.sprite-fig19-1 {
+    width: 48px;
+    height: 55px;
+    background-position: -297px -5px;
+}
+
+.sprite-fig20 {
+    width: 47px;
+    height: 57px;
+    background-position: -355px -5px;
+}
+
+.sprite-fig20-1 {
+    width: 47px;
+    height: 57px;
+    background-position: -412px -5px;
+}
