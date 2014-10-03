@@ -135,12 +135,19 @@ body {
 }
 
 .container {
-  width: 1280px;
+  width: 1250px;
+  padding-left: 0;
+  padding-rigth: 0;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .header {
   position: relative;
-  min-width: 1280px;
+  min-width: 1250px;
   height: 93px;
   border-bottom: 2px solid #0033ff;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.75);
@@ -409,7 +416,7 @@ body {
   position: relative;
   height: 68px;
   background: url(../img/fig15.png) repeat-x 0 0 #ffce3b;
-  min-width: 1280px;
+  min-width: 1250px;
 }
 
 .tech-support {
