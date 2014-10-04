@@ -415,6 +415,10 @@ body {
   padding: 11px 17px;
   top: 50px;
 }
+.btn-cust.-grey {
+  background-image: url(../img/fig23.png);
+  background-color: #ccc;
+}
 
 .footer {
   position: relative;
@@ -786,6 +790,12 @@ body {
   background-position: -412px -5px;
 }
 
+.nav-tabs.nav-justified {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  margin-bottom: 7px;
+}
+
 .nav-tabs.nav-justified > li {
   overflow: hidden;
 }
@@ -830,12 +840,6 @@ body {
 }
 .nav-tabs.nav-justified > .active > a:after {
   right: -1px;
-}
-
-.nav-tabs.nav-justified {
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.75);
-  border-radius: 5px;
-  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=r.css.map */
