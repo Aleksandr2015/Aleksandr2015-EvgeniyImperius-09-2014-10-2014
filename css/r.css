@@ -786,6 +786,10 @@ body {
   background-position: -412px -5px;
 }
 
+.nav-tabs.nav-justified > li {
+  overflow: hidden;
+}
+
 .nav-tabs.nav-justified > li > a {
   color: #ffffff;
   font-size: 24px;
@@ -809,6 +813,23 @@ body {
   background: -o-linear-gradient(90deg, #99ccff 0%, #6699cc 100%);
   background: -ms-linear-gradient(90deg, #99ccff 0%, #6699cc 100%);
   background: linear-gradient(0deg, #99ccff 0%, #6699cc 100%);
+}
+.nav-tabs.nav-justified > .active > a:before, .nav-tabs.nav-justified > .active > a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 2px;
+  background: #FFF;
+  height: 100%;
+  z-index: 1;
+  border-radius: 100%;
+}
+.nav-tabs.nav-justified > .active > a:before {
+  left: -1px;
+}
+.nav-tabs.nav-justified > .active > a:after {
+  right: -1px;
 }
 
 .nav-tabs.nav-justified {
