@@ -383,6 +383,7 @@ body {
   border-radius: 5px;
   line-height: 1;
   padding: 10px 40px;
+  height: 44px;
 }
 .btn-cust:hover, .btn-cust:active, .btn-cust:focus {
   color: #fff;

@@ -1,4 +1,36 @@
 /*
+Slider
+*/
+.main-slider .carousel-indicators {
+    z-index: 999;
+}
+
+.carousel-indicators li {
+    background: #fff;
+}
+
+
+.main-slider .carousel-inner,
+.main-slider .item {
+    height: 100%;
+}
+
+.slider-bg-image {
+    margin: 0;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 555;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.main-slider .slider-content {
+    position: relative;
+    z-index: 9999;
+}
+
+/*
 Autorize & Register links and social buttons
 */
 
