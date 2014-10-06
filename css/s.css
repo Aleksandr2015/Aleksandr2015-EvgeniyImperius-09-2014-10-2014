@@ -1,0 +1,226 @@
+/*
+Autorize & Register links and social buttons
+*/
+
+.login_link:hover,
+.login_link:active,
+.login_link:focus {
+    outline: none;
+}
+
+.social-gplus,
+.social-tw,
+.social-fb,
+.social-vk {
+    transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;    
+}
+
+
+.social-gplus {
+    width: 50px;
+    height: 63px;
+    background: url(../img/fig25.png) no-repeat transparent 0 0;
+    position: absolute;
+    top: 25px;
+    left: -41px;
+    z-index: 888;    
+
+}
+
+.social-gplus:hover {    
+    background: url(../img/fig26.png) no-repeat transparent 0 0;
+    left: -50px;
+}
+
+.social-tw {
+    width: 50px;
+    height: 63px;
+    background: url(../img/fig25.png) no-repeat transparent 0 -63px;
+    position: absolute;
+    top: 90px;
+    left: -41px;
+    z-index: 888;
+}
+
+.social-tw:hover {    
+    background: url(../img/fig26.png) no-repeat transparent 0 -63px;
+    left: -50px;
+}
+
+.social-fb {
+    width: 50px;
+    height: 63px;
+    background: url(../img/fig25.png) no-repeat transparent 0 -125px;
+    position: absolute;
+    top: 155px;
+    left: -41px;
+    z-index: 888;    
+}
+
+.social-fb:hover {    
+    background: url(../img/fig26.png) no-repeat transparent 0 -125px;
+    left: -50px;
+}
+
+.social-vk {
+    width: 50px;
+    height: 63px;
+    background: url(../img/fig25.png) no-repeat transparent 0 -187px;
+    position: absolute;
+    top: 220px;
+    left: -41px;
+    z-index: 888;
+}
+
+.social-vk:hover {    
+    background: url(../img/fig26.png) no-repeat transparent 0 -187px;
+    left: -50px;
+}
+
+/*
+Autorize
+*/
+
+#m-autorize .modal-dialog, #m-autorize .modal-content, #m-autorize .modal-body {
+    width: 302px;
+    height: 300px;
+    position: relative;
+    z-index: 999;
+    border-radius: 5px;
+}
+
+#m-autorize .modal-body.autorize {
+    background-image: url(../img/fig24.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 302px 300px;
+    background-position: 0 0;
+}
+
+#m-autorize .ma-header {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 40px;
+    text-shadow: 1px 1px 3px #ffffff;
+}
+
+#m-autorize .ma-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 15px;
+    display: inline-block;
+    text-shadow: 1px 1px 3px #ffffff;
+}
+
+#m-autorize .modal-body.autorize .form-control {
+    border-radius: 15px;
+    width: 210px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 2px 2px 3px #999999, inset 2px 2px 3px #000000;
+    border:none;
+    color: #999;
+}
+
+.modal-body.autorize .form-control:hover,
+.modal-body.autorize .form-control:active,
+.modal-body.autorize .form-control:focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow: 2px 2px 3px #999999, inset 2px 2px 3px #000000 !important;
+}
+
+.btn-cust.autorize {    
+    background-size: 150px 44px;
+    background-image: url(../img/fig14.png);
+    width: 150px;
+    display: block;
+    margin: 25px auto 0;
+    font-size: 18px;
+    padding: 10px 15px;
+    box-shadow: 0 0 20px #fff;
+    height: 44px;
+}
+
+.mafp {
+    color: #333;
+}
+
+.mafp .ma-text {
+    margin-top: 5px;
+}
+
+.mafp:hover,
+.mafp:active,
+.mafp:focus {
+    color: #333;
+    text-decoration: none;
+}
+
+/*
+Register
+*/
+
+#m-register .modal-dialog, #m-register .modal-content, #m-register .modal-body {
+    width: 302px;
+    height: 385px;
+    position: relative;
+    z-index: 999;
+    border-radius: 5px;
+}
+
+#m-register .modal-body.register {
+    background-image: url(../img/fig24.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 302px 385px;
+    background-position: 0 0;
+}
+
+#m-register .mr-header {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 40px;
+    text-shadow: 1px 1px 3px #ffffff;
+}
+
+#m-register .mr-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 15px;
+    display: inline-block;
+    text-shadow: 1px 1px 3px #ffffff;
+}
+
+#m-register .modal-body.register .form-control {
+    border-radius: 15px;
+    width: 210px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 2px 2px 3px #999999, inset 2px 2px 3px #000000;
+    border:none;
+    color: #999;
+}
+
+#m-register .modal-body.register .form-control:hover,
+#m-register .modal-body.register .form-control:active,
+#m-register .modal-body.register .form-control:focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow: 2px 2px 3px #999999, inset 2px 2px 3px #000000 !important;
+}
+
+#m-register .btn-cust.register {    
+    background-size: 208px 44px;
+    background-image: url(../img/fig14-reg.png);
+    width: 210px;
+    display: block;
+    margin: 25px auto 0;
+    font-size: 18px;
+    padding: 10px 15px;
+    box-shadow: 0 0 20px #fff;
+    height: 44px;
+}
