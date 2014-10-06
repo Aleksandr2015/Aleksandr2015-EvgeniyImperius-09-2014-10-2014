@@ -1,0 +1,79 @@
+.navi{
+    text-align: center;
+    position: relative;
+    z-index: 1; //для шапки, чтобы меню было под тенью шапки
+
+    &_item{
+        position: relative;
+        float: left;
+
+        width: calc(100% / 9); //для первого эл меню
+        height: 65px;
+        padding: 0 15px;
+
+        &:not(:first-child){
+            width: calc((100% / 9) + 10px);
+            margin-left: -10px;
+        }
+
+//        @for $i from 2 to 9{
+//            &:nth-child( #{$i} ){
+//                margin-left: -( ($i*10) - 10px );
+//            }
+//        }
+
+        color: #666;
+        font-size: 14px;
+        font-weight: 400;
+        text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75);
+
+        border-width: 1px;
+        border-color:  #cccccc;
+        border-style: solid;
+        background-color:  #ffffff;
+        background: -webkit-linear-gradient(90deg, #ffffff 0%, #fff1c8 27%, #ffcc33 100%);
+        background: -moz-linear-gradient(90deg, #ffffff 0%, #fff1c8 27%, #ffcc33 100%);
+        background: -o-linear-gradient(90deg, #ffffff 0%, #fff1c8 27%, #ffcc33 100%);
+        background: -ms-linear-gradient(90deg, #ffffff 0%, #fff1c8 27%, #ffcc33 100%);
+        background: linear-gradient(0deg, #ffffff 0%, #fff1c8 27%, #ffcc33 100%);
+        box-shadow: 0px 0px 10px 0.00px rgba(153, 102, 0, 0.75);
+
+
+        //вертикальное выравнивание текста в пуктах меню
+        &:before{
+            content: '';
+            display: inline-block;
+            //position: absolute;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        & span{
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+
+        //hover
+        @include hover{
+            z-index: 1;
+            height: 80px;
+            color: #666;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        //active
+        &.active{
+            color:  #000000;
+            text-shadow: 0px 1px 1px #ffffff;
+            background-color:  #ffffff;
+            background: -webkit-linear-gradient(90deg, #ffffff 0%, #e3f1ff 27%, #99ccff 100%);
+            background: -moz-linear-gradient(90deg, #ffffff 0%, #e3f1ff 27%, #99ccff 100%);
+            background: -o-linear-gradient(90deg, #ffffff 0%, #e3f1ff 27%, #99ccff 100%);
+            background: -ms-linear-gradient(90deg, #ffffff 0%, #e3f1ff 27%, #99ccff 100%);
+            background: linear-gradient(0deg, #ffffff 0%, #e3f1ff 27%, #99ccff 100%);
+        }
+    }
+}

@@ -1,0 +1,157 @@
+//
+//Slider
+//
+
+.slider{
+    width: 1000px;
+    height: 220px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+    float: left;
+}
+
+//boo
+.carousel{
+    height: 100%;
+}
+
+.carousel-indicators{
+    left: auto;
+    right: 15px;
+    bottom: 15px;
+    margin-left: 0;
+    margin-bottom: 0;
+    width: auto;
+}
+
+.carousel-indicators li, .carousel-indicators .active {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
+    width: 14px;
+    height: 14px;
+    margin: 1px 1px 1px 5px;
+}
+
+.carousel-indicators .active {
+    background-color:  #464646;
+    border-color: #464646;
+    box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75);
+}
+
+
+
+
+//
+// Projects
+//
+
+.container.-m10{
+    margin: 10px auto;
+}
+
+.our-projects{
+    position: relative;
+    width: 240px;
+    min-height: 220px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color:  #cccccc;
+    border-style: solid;
+    background:  #fff url(../img/fig16.png) no-repeat center center;
+    background-size: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        top:0; left: 0; right: 0; bottom: 0;
+        background: rgba(255,255,255,.7);
+    }
+
+    //Mods
+    &.-layout-for-main-page{
+        margin-left: 10px;
+        float: left;
+    }
+
+    &_wrap{
+        position: relative;
+        padding: 8px;
+        background: rgba(0,0,0,.4);
+    }
+
+    &_title{
+        font-size: 18px;
+        font-weight: 700;
+        text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75);
+        text-align: center;
+        min-height: 30px;
+        background: #ffcc33;
+        line-height: 1.6;
+    }
+
+    &_list{
+        list-style: none;
+        padding: 0;
+        margin: 5px 0 0;
+    }
+
+    &_item{
+        line-height: 1.25;
+
+        & > a{
+            color:  #fff;
+            font-size: 14px;
+            font-weight: 400;
+            text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
+            text-decoration: underline;
+
+            @include hover{
+                color: darken(#fff, 10%);
+            }
+        }
+    }
+}
+
+
+
+
+//
+// Card Grid
+//
+
+.card-grid{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: auto; //for floats
+
+    &_item{
+        float: left;
+    }
+
+    //Mod
+    &.-col5 &_item:not( :nth-child(5n) ) {
+        margin-right: calc( (100% - (240px * 5)) / 4);
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+//
+// Some Text
+//
+
+.some-text{
+    margin: 0 auto 25px;
+
+    & > p {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+

@@ -1,0 +1,185 @@
+//
+// Tabs Boo
+//
+
+.nav-tabs.nav-justified{
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    margin-bottom: 7px;
+}
+
+.nav-tabs.nav-justified>li{
+    overflow: hidden; //чтобы скрыть часть белой линии по бокам активного таба
+}
+
+.nav-tabs.nav-justified>li>a{
+    color:  #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
+    padding: 15px;
+    border: none !important;
+    border-radius: 0;
+
+    background: -webkit-linear-gradient(90deg, #6699cc 0%, #99ccff 100%);
+    background: -moz-linear-gradient(90deg, #6699cc 0%, #99ccff 100%);
+    background: -o-linear-gradient(90deg, #6699cc 0%, #99ccff 100%);
+    background: -ms-linear-gradient(90deg, #6699cc 0%, #99ccff 100%);
+    background: linear-gradient(0deg, #6699cc 0%, #99ccff 100%);
+
+
+}
+
+.nav-tabs.nav-justified>.active>a{
+    color: #fff !important;
+    border: none !important;
+
+    background: -webkit-linear-gradient(90deg, #99ccff 0%, #6699cc 100%);
+    background: -moz-linear-gradient(90deg, #99ccff 0%, #6699cc 100%);
+    background: -o-linear-gradient(90deg, #99ccff 0%, #6699cc 100%);
+    background: -ms-linear-gradient(90deg, #99ccff 0%, #6699cc 100%);
+    background: linear-gradient(0deg, #99ccff 0%, #6699cc 100%);
+
+    //white line
+    &:before, &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 2px;
+        background: #FFF;
+        height: 100%;
+        z-index: 1;
+        border-radius: 100%;
+    }
+
+    &:before{
+        left: -1px;
+    }
+    &:after{
+        right: -1px;
+    }
+
+}
+
+
+//
+// Products Tab
+//
+
+.products-profile{
+    width: 555px;
+    margin: 15px auto;
+}
+
+
+
+
+//
+// Profile
+//
+.profile{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    position: relative;
+
+    &:before, &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    &:before{
+        background: #6699cc;
+        z-index: 1;
+        left: 10px;
+    }
+    &:after{
+        background: #99ccff;
+        z-index: 2;
+        left: -10px;
+    }
+
+    // Profile Name
+    &_name{
+        position: absolute;
+        z-index: 3;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 700;
+        font-style: italic;
+        background:  #99ccff;
+        padding: 8px 60px  8px 15px;
+        right: calc(100% - 60px);
+        bottom: 40px;
+    }
+
+    //Profile Photo
+    &_photo{
+        position: relative;
+        z-index: 4;
+        top: 10px;
+        width: 190px;
+        height: 190px;
+        overflow: hidden;
+        margin: auto;
+        border-radius: 50%;
+        box-shadow: 3px 6px 5px rgba(0, 0, 0, 0.75);
+
+        & > img{
+            width: 100%;
+            max-height: 100%;
+        }
+    }
+}
+
+
+
+//
+//Yellow block
+//
+
+.yellow-block{
+    display: inline-block;
+    margin: auto 25px;
+    background-color: #ffffcc;
+    padding: 20px 30px;
+    vertical-align: top;
+
+    &_title{
+        color: #ffcc66;
+        font-size: 24px;
+        font-style: italic;
+        line-height: 1;
+        margin-bottom: 15px;
+    }
+
+    &_list{
+        list-style: none;
+        padding: 0;
+        margin-bottom: 25px;
+
+        &_item{
+            color: #999;
+            font-size: 18px;
+            font-style: italic;
+            line-height: 1.2;
+        }
+    }
+
+    &_link{
+        color: #336699;
+        font-style: italic;
+        text-decoration: underline;
+
+        @include hover{
+            color: darken(#336699, 10%);
+        }
+    }
+
+}

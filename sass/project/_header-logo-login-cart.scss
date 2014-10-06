@@ -1,0 +1,318 @@
+//
+// Header
+//
+.header{
+    position: relative;
+    min-width: 1250px; //чтобы не обрезался бекграунд при сжатии окна
+    height: 93px; //важно 93 тк выпадающее говно козины двигает меню
+    border-bottom: 2px solid #0033ff;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.75);
+    background: url(../img/fig11.png) repeat-x 0 0 #ffce3b;
+    z-index: 2; //чтобы меню было под тенью шапки
+}
+
+
+//
+//Logo
+//
+.logo{
+    display: block;
+    width: 430px;
+
+    &.-header{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+
+    // img
+    &_img{
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    //title
+    &_title{
+        display: inline-block;
+        vertical-align: middle;
+
+        //text1
+        &_text1{
+            color: #fff;
+            font-size: 22px;
+            font-weight: 700;
+            text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
+        }
+
+        //text2
+        &_text2{
+            color:  #ffffff;
+            font-size: 12px;
+            font-style: italic;
+            text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
+        }
+    }
+
+}
+
+
+
+
+//
+//Login
+//
+.login{
+    display: inline-block;
+
+    &.-header{
+        float: right;
+        margin: 13px 20px 0;
+    }
+
+
+    //img
+    &_img{
+        display: block;
+        margin: 0 auto 5px;
+    }
+
+    //link
+    &_link{
+        display: block;
+        color:  #ffffff;
+        font-size: 14px;
+        font-style: italic;
+        line-height: 1;
+        margin-bottom: 4px;
+        padding-bottom: 1px;
+        border-bottom: 1px dashed #fff;
+
+        //link hover
+        @include hover{
+            text-decoration: none;
+            border-bottom-color: darken(#fff, 10%);
+            color: darken(#fff, 10%);
+        }
+    }
+}
+
+
+
+
+
+
+//
+//Cart
+//
+#checker{
+    display: none;
+}
+
+.cart{
+    position: relative;
+    display: inline-block;
+
+    &.-header{
+        float: right;
+        margin: 10px 0 0;
+    }
+
+    //
+    //visible part
+    //
+    &_visible{
+        position: relative;
+        z-index: 2;
+        width: 110px;
+        height: 70px;
+        background: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.75);
+        border-radius: 5px;
+        @include smooth;
+
+        //change on check
+        #checker:checked ~ &{
+            box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.75);
+            border-radius: 5px 5px 0 0;
+            height: 82px;
+        }
+
+
+        //basket
+        &_basket{
+            display: inline-block;
+            width: 55px;
+            height: 43px;
+            background: #fff url(../img/fig3.png) no-repeat right 0;
+
+            &_items{
+                display: inline-block;
+                color:  #ffffff;
+                font-size: 14px;
+                font-weight: 700;
+                width: 20px;
+                height: 20px;
+                background: #ff0000;
+                border-radius: 50%;
+                text-align: center;
+                position: relative;
+                top: 4px;
+                left: 16px;
+            }
+        }
+
+        //total sum
+        &_total{
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 700;
+            position: relative;
+            top: 17px;
+            left: -5px;
+        }
+
+        //label
+        &_label{
+            display: block;
+            cursor: pointer;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0;
+
+            // label preuso
+            &:before{
+                content: 'Подробнее';
+                display: inline-block;
+                line-height: 1.1;
+                border-bottom: 1px dashed #000;
+
+                //change Подробнее na Свернуть
+                #checker:checked ~ .cart_visible &{
+                    content: 'Свернуть';
+                }
+            }
+
+            &:after{
+                content: '';
+                display: inline-block;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-color: #996600 transparent transparent;
+                border-width: 7px 4px 0;
+                margin-left: 3px;
+
+                #checker:checked ~ .cart_visible &{
+                    border-color: transparent transparent #996600;
+                    border-width: 0 4px 7px;
+                }
+            }
+        }
+    }
+
+    //
+    //hidden part
+    //
+    &_hidden{
+        visibility: hidden;
+        opacity: 0;
+        width: 670px;
+        background: #fff;
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        right: 0;
+        @include smooth;
+        pointer-events: none;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+        border-radius: 5px 0 5px 5px;
+
+        // change on check
+        #checker:checked ~ &{
+            visibility: visible;
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        //table
+        &_table{
+            float: left;
+            margin: 0 10px 20px 20px;
+
+            & table{
+                width:520px;
+            }
+
+            //table head
+            & thead th {
+
+                & div{
+                    font-style: italic;
+                    font-size: 12px;
+                    font-weight: 500;
+                    padding-top:15px;
+                    padding-bottom: 15px;
+                    text-align: center;
+                }
+
+                &:first-child div{
+                    font-size: 14px;
+                    font-weight: 700;
+                    font-style: normal;
+                    padding-left: 15px;
+                    text-align: left;
+                }
+            }
+
+            //table body
+            & tbody tr td {
+
+                &.divider{
+                    height: 10px;
+                }
+
+                & div{
+                    font-size: 14px;
+                    font-weight: 500;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    border-top: 1px dashed #ccc;
+                    border-bottom: 1px dashed #ccc;
+                    text-align: center;
+                }
+
+                &:first-child div{
+                    padding-left: 15px;
+                    border-left: 1px dashed #ccc;
+                    border-radius: 5px 0 0 5px;
+                    text-align: left;
+                }
+                &:last-child div{
+                    padding-right: 15px;
+                    border-right: 1px dashed #ccc;
+                    border-radius: 0 5px 5px 0;
+                }
+            }
+
+        }
+
+        //btn
+        &_btn{
+            float: left;
+        }
+    }
+}
+
+
+
+
+//
+//Navigation
+//
+
+//отступ для меню на главной
+.container.-h110{
+    height: 110px;
+}
