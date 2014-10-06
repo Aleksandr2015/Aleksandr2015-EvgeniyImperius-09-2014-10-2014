@@ -1,8 +1,18 @@
+.cart_hidden {
+    z-index: 999;
+}
+
 /*
 Slider
 */
+
+.main-slider {
+    z-index: 1;
+    position: relative;
+}
+
 .main-slider .carousel-indicators {
-    z-index: 999;
+    z-index: 666;
 }
 
 .carousel-indicators li {
