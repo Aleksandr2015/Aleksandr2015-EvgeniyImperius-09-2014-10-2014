@@ -173,7 +173,93 @@
 
         <!--Carousel-->
         <div class="container">
-        
+            <div class="main-carousel-wrap">           
+                <div class="carousel-header">
+                    <h2>Семинары КЭЛ:</h2>
+                </div>
+                <button class="prev">Предыдущий</button>
+                <button class="next">Следующий</button>
+
+                <div class="slides-wrap">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="slides-content">
+                                    <h2>9-10 августа МОСКВА</h2>
+                                    <p>
+                                        БИОЭНЕРГЕТИКА: <br>
+                                        управление здоровьем <br>
+                                        и мотивацией <br>
+                                        семинар Е.В.Гильбо
+                                    </p>
+                                </div> 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="slides-content">
+                                    <h2>
+                                        17-22 августа КОТКА
+                                    </h2>
+                                    <p>
+                                        <b>(Финляндия)</b> У НАС - ВСЁ<br>
+                                        ХОРОШО! Обсуждаем <br>
+                                        перспективы успеха <br>
+                                        летняя туса + семинар КЭЛ
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="slides-content">
+                                    <h2>
+                                        14-21 сентября Мальорка
+                                    </h2>
+                                    <p>
+                                        МИР ПОСЛЕ УКРАИНЫ: <br>
+                                        риски и возможности <br>
+                                        семинар М.Л.Хазина и <br>
+                                        Е.В.Гильбо
+                                    </p>
+                                </div>  
+                            </a>                          
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="slides-content">
+                                    <h2>
+                                        C 28 ноября по 12 декабря
+                                    </h2>
+                                    <p>
+                                        <b>ТЕНЕРИФЕ</b>
+                                        УСПЕХ В ЭПОХУ ПЕРЕМЕН: правильные <br>
+                                        взаимоотношения с новой <br>
+                                        реальностью зимний семинар КЭЛ
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="slides-content">
+                                    <h2>
+                                        9-10 августа МОСКВА
+                                    </h2>
+                                    <p>
+                                        БИОЭНЕРГЕТИКА:<br> 
+                                        управление здоровьем <br>
+                                        и мотивацией<br>
+                                        семинар Е.В.Гильбо
+                                    </p>   
+                                </div>
+                            </a>                   
+                        </li>
+                    </ul>
+                </div>
+            
+            </div>
+            
         </div>
 
         <!--Slider + Projects-->
@@ -717,6 +803,17 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <!--Boo js-->
         <script src='vendor/bootstrap/js/bootstrap.min.js'></script>
+        <!-- Carousel js -->
+        <script type="text/javascript" src="js/jquery.jcarousellite.js"></script>
+        <script>
+            $(function() {
+                $(".slides-wrap").jCarouselLite({                    
+                    btnNext: ".next",
+                    btnPrev: ".prev",
+                    visible: 5,
+                });
+            });
+        </script>
 
     </body>
 </html>

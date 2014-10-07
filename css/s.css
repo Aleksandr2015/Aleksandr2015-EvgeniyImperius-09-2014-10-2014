@@ -1,3 +1,97 @@
+/*
+Carousel
+*/
+
+.main-carousel-wrap {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.main-carousel-wrap .carousel-header {
+    background-color: #ffcc33;
+    padding: 10px;
+    display: inline-block;
+    position: absolute;
+    top:-30%;
+    left: 4%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;    
+}
+
+.main-carousel-wrap .carousel-header h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.main-carousel-wrap .prev {
+    text-indent: -999999px;
+    position: absolute;
+    left: 15px;
+    top:0;
+    height: 130px;
+    width: 20px;
+    background-image: url(../img/fig28.png);
+    background-position: 0 27px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+}
+
+.main-carousel-wrap .next {
+    text-indent: -999999px;
+    position: absolute;
+    right: 10px;
+    top:0px;
+    height: 130px;
+    width: 20px;
+    background-image: url(../img/fig29.png);
+    background-position: 0 27px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+}
+
+.slides-wrap h2,
+.slides-wrap p {
+    font-size: 14px;
+    margin: 0 0 2px 0;
+    padding: 0;
+}
+
+.slides-wrap li {
+    width: 235px;
+    overflow-y: auto;
+}
+
+.slides-wrap li a {
+    color: #666666;
+    text-decoration: none;
+}
+
+.slides-content {
+    padding: 5px 0 0 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc; 
+    width: 230px;
+    height: 130px;
+}
+
+/*
+Custom upgrade
+*/
+
+.btn-cust {
+    background-color: transparent !important;
+}
+
 .cart_hidden {
     z-index: 999;
 }
