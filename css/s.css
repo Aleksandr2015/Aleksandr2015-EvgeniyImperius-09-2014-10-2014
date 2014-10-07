@@ -1,4 +1,11 @@
 /*
+player
+*/
+.player {
+    margin-bottom: 10px;
+}
+
+/*
 Carousel
 */
 
@@ -87,6 +94,12 @@ Carousel
 /*
 Custom upgrade
 */
+
+.social_btn:nth-of-type(2):hover,
+.social_btn:nth-of-type(2):active,
+.social_btn:nth-of-type(2):focus {
+    background-position: -179px -5px !important;
+}
 
 .btn-cust {
     background-color: transparent !important;
