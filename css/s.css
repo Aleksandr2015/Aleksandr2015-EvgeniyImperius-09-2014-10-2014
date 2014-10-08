@@ -366,6 +366,10 @@ Carousel
 Custom upgrade
 */
 
+.nav-tabs.nav-justified > .active > a:before, .nav-tabs.nav-justified > .active > a:after {
+    height: auto !important;
+}
+
 .nav.nav-tabs.nav-justified.-billing li:first-child a {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
