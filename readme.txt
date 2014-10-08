@@ -18,6 +18,8 @@
 5. Продукты - http://test1.honcharovs.com/user-profile-products.html
 6. Биллинг - http://test1.honcharovs.com/user-profile-billing.html
 
+Ссылка на пак верстки отправленная заказчику - https://yadi.sk/d/cQeNS9v6bskqJ
+
 =================================
 Инфа
 =================================
