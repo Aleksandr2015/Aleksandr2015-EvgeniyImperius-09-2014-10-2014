@@ -1,4 +1,275 @@
 /*
+Billing
+*/
+
+.user_name {
+  display: block;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 800;
+  font-style: normal;  
+  margin-bottom: 4px;    
+}
+
+.login_link.-log_out {
+    display: inline-block;
+    position: relative;
+    bottom:10px;
+}
+
+.billing_user_stats {
+    text-align: center;
+    position: relative;
+    left:83px;
+    z-index: 999;    
+    top:5px;
+}
+
+.login_img.-user {
+    position: relative;    
+    top:5px;
+}
+
+.login_ballance {
+    text-align: center;
+    background-color: #999999;
+    background-color: rgba(153,153,153,.70);
+    padding: 3px 3px 0 5px;    
+    position: relative;
+    bottom:10px;
+    left:10px;
+    z-index: 1;
+    height:40px;    
+}
+
+.lb-header {
+    color: #fff;
+    font-size: 14px;    
+    font-style: italic;
+    position: relative;
+    bottom:3px;
+}
+
+.lb-summ {
+    color: #fff;
+    font-size: 16px;    
+    font-weight: 800;
+    font-style: italic;
+    text-shadow: 1px 1px 3px #000;
+    position: relative;
+    bottom:5px;
+}
+
+
+.-billing .btn-cust {
+    background-size: 175px 44px !important;
+}
+
+
+.products-profile.-user_profile {
+    width: 1150px !important;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.-user_profile .yellow-block {
+    min-height: 205px;
+    min-width: 307px;
+    position: relative;
+}
+
+.cust-not-start {
+    position: absolute;
+    bottom:20px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    width: 80%;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.-user_profile .yellow-block_list.-left {
+    width: 118px;
+}
+
+.-user_profile .yellow-block_list.-right {
+    width: 118px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.-user_profile .yellow-block_list {
+    margin-bottom: 0 !important;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.profile_change_photo {
+    font-size: 12px;
+    position: absolute;
+    top:-18px;
+    left: 58px;
+    color: #666;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.profile_change_name {
+    font-size: 12px;
+    position: absolute;
+    bottom:10px;
+    left: -88px;
+    color: #666;
+    text-decoration: underline;
+    cursor: pointer; 
+}
+
+.profile_change_photo:hover,
+.profile_change_name:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.ml40 {
+    margin-left: 40px;
+}
+
+.mt50 {
+    margin-top: 50px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.ml0 {
+    margin-left: 0px;
+}
+
+.mr0 {
+    margin-right: 0px;
+}
+
+.fs18 {font-size: 18px;}
+.fs14 {font-size: 14px;}
+
+.new_user_profile_register .profile-star {
+    font-size: 12px;
+    text-align:center;
+    color: #333;
+    text-shadow: 1px 1px 3px #fff;
+    margin-top: 5px;
+}
+
+#m-register.new_user_profile_register .modal-dialog,
+#m-register.new_user_profile_register .modal-content,
+#m-register.new_user_profile_register .modal-body {
+    height: 475px;
+}
+
+#m-register.new_user_profile_register .modal-body.register {
+    background-size: 302px 475px !important;
+}
+
+
+#m-register.new_user_profile_register {
+    float: left;
+    margin-bottom: 60px;
+    
+}
+
+.yellow-block.-billing .yellow-block_list_item {
+    text-align: center;
+    line-height: 35px;
+}
+
+.yellow-block.-billing .yellow-block_title {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.-user_profile .profile {
+    margin-left: 98px;
+}
+
+.products-profile.-billing-bil {
+    width: 590px;
+}
+
+.products-profile.-billing-bil .profile {
+    margin-left: 120px; 
+}
+
+.profile-history .ph-header {
+    font-size: 14px;
+    font-weight: 800;
+    padding-left: 30px;
+}
+
+.profile-history table {
+    width: 86%;
+    margin-left: 30px;
+}
+
+
+.profile-history table tbody tr {
+    border:0px dashed #ccc !important;     
+}
+
+.profile-history table tbody tr td {
+    border:0px dashed #ccc;    
+    font-size: 14px;
+    text-align: center;
+}
+
+.profile-history table>thead>tr>th {
+    border-bottom:0px solid #ccc; 
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+}
+
+.profile-history tbody tr td:first-child div {
+    padding-left: 15px;
+    border-left: 1px dashed #ccc;
+    border-radius: 5px 0 0 5px;
+    text-align: left;
+}
+
+.profile-history tbody tr td div {
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
+    text-align: center;
+}
+
+.profile-history tbody tr td:last-child div {
+    padding-right: 15px;
+    border-right: 1px dashed #ccc;
+    border-radius: 0 5px 5px 0; 
+}
+
+.profile-history .table>thead>tr>th,
+.profile-history .table>tbody>tr>th,
+.profile-history .table>tfoot>tr>th,
+.profile-history .table>thead>tr>td,
+.profile-history .table>tbody>tr>td,
+.profile-history .table>tfoot>tr>td {
+    padding: 5px 0px;
+}
+
+/*
 player
 */
 .player {
@@ -94,6 +365,32 @@ Carousel
 /*
 Custom upgrade
 */
+
+.nav.nav-tabs.nav-justified.-billing li:first-child a {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.nav.nav-tabs.nav-justified.-billing li:last-child a {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.nav.nav-tabs.nav-justified.-billing li:nth-child(2) {
+    border-left: 1px solid #fff;
+}
+
+.nav.nav-tabs.nav-justified.-billing .active:first-child a::before {
+    width: 0;
+}
+
+.nav.nav-tabs.nav-justified.-billing .active:last-child a::after {
+    width: 0;
+}
+
+.nav-tabs.nav-justified > .active > a:before {
+    left: 0 !important;
+}
 
 .social_btn:nth-of-type(2):hover,
 .social_btn:nth-of-type(2):active,

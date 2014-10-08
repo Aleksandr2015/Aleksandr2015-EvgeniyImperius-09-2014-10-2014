@@ -121,130 +121,109 @@
 
         <!--Tabs-->
         <div class="container">
-            
             <!-- Nav tabs -->
             <ul class="nav nav-tabs nav-justified -billing" role="tablist">
-              <li class="active"><a href="#">Профиль</a></li>
-              <li><a href="#">Продукты</a></li>
+              <li><a href="#">Профиль</a></li>
+              <li class="active"><a href="#">Продукты</a></li>
               <li><a href="#">Биллинг</a></li>
             </ul>
 
             <!-- Tab panes -->
             <div class="tab-content">
 
-              <!--User profile Tab-->
-              <div class="tab-pane fade  in active" id="profile">
+              <!--Products Tab-->
+              <div class="tab-pane fade  in active" id="products">
 
                 <!--Panel-->
                 <div class="container">
-                    <div class="panel-cust">Профиль пользователя</div>
+                    <div class="panel-cust">Продукты</div>
                 </div>
 
                 <!--User Profile-->
-                <div class="products-profile -user_profile">
-                                      
+                <div class="products-profile">
 
                    <!--Profile Photo-->
-                    <div class="profile">                        
-                        <a class="profile_change_photo">Изменить фото</a>
-                        <a class="profile_change_name">Изменить имя</a>
+                    <div class="profile">
                         <div class="profile_name">Наталья</div>
-                        <div class="profile_photo">                                                     
+                        <div class="profile_photo">
                             <img src="img/fig22.png" alt="photo">
                         </div>
                     </div>
 
                     <!--Profile Text-->
-                    <div class="yellow-block mb20 ml40 mr0">
-                        <div class="yellow-block_title">Вы состоите в группах:</div>
-                            <ul class="yellow-block_list -left pull-left">
-                                <li class="yellow-block_list_item">Группа 1</li>
-                                <li class="yellow-block_list_item">КЭЛ</li>
-                                <li class="yellow-block_list_item">Группа 5</li>
-                                <li class="yellow-block_list_item">Группа 10</li>
-                                <li class="yellow-block_list_item">КЭЛ 67</li>
-                                <li class="yellow-block_list_item">Группа 9</li>
-                            </ul>    
-                            <ul class="yellow-block_list -right pull-right">
-                                <li class="yellow-block_list_item">Группа 1</li>
-                                <li class="yellow-block_list_item">КЭЛ</li>
-                                <li class="yellow-block_list_item">Группа 5</li>
-                                <li class="yellow-block_list_item">Группа 10</li>
-                                <li class="yellow-block_list_item">КЭЛ 67</li>
-                                <li class="yellow-block_list_item">Группа 9</li>                                
-                            </ul>
-                            <div class="clearfix"></div>
-                    </div>
-                    
-                    <!--Profile Text-->
-                    <div class="yellow-block ml20 mr0">
-                        <div class="yellow-block_title" style="text-align:center;">Ваш баланс:</div>
-                            <ul class="yellow-block_list">
-                                <li class="yellow-block_list_item" style="text-align:center;">50 КМ</li>
-                                <br>                                
-                            </ul>    
-                        <a href="#" class="yellow-block_link" style="margin-left:55px;">Пополнить баланс</a><br>
-                        <a href="#" class="yellow-block_link" style="margin-left:55px;">История</a>    
-                    </div>
-                    
-                    <div id="m-register" class="new_user_profile_register">
-                        <div class="modal-content">                    
-                            <div class="modal-body text-center register">
-                                <span class="mr-header">Профиль</span><br>
-                                <span class="mr-text">Здесь вы можете изменить<br> свои данные </span>
-                                <form action="#" role="form">
-                                    <div class="form-group">                                
-                                        <input class="form-control" type="name" id="name" name="name" placeholder="Ваше имя" required>
-                                    </div>
-                                    <div class="form-group">                                
-                                        <input class="form-control" type="email" id="email" name="email" placeholder="Ваш e-mail" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <input class="form-control" type="password" id="password" name="password" placeholder="Новый пароль" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <input class="form-control" type="password_repeat" id="password_repeat" name="password_repeat" placeholder="Повторите новый пароль" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <input class="form-control" type="password_repeat" id="password_repeat" name="password_repeat" placeholder="Действующий пароль" required>
-                                    </div>
-                                    <button type="submit" class="btn-cust register">Изменить</button>                            
-                                    <p class="profile-star">
-                                        * При регистрации (включая регистрацию<br>
-                                        через соц. сеть) пароль высылается <br>
-                                        на эл. почту.
-                                    </p>
-                                </form>
-                            </div>                    
-                        </div>
-
-                </div>
-                    
-                    <!--Profile Text-->
-                    <div class="yellow-block ml40 mr0">
-                        <div class="yellow-block_title">CДО</div>
-                            <ul class="yellow-block_list">
-                                <li class="yellow-block_list_item">Курс 2 для личного роста</li>                                
-                            </ul>                            
-                            <div class="clearfix"></div>                        
-                        <div class="cust-not-start">Не начат</div>
-                    </div>
-                    
-                    <!--Profile Text-->
-                    <div class="yellow-block ml20 mr0">
+                    <div class="yellow-block">
                         <div class="yellow-block_title">Последние продукты:</div>
                         <ul class="yellow-block_list">
                             <li class="yellow-block_list_item">Расширение бизнеса</li>
                             <li class="yellow-block_list_item">Технология карьеры</li>
                             <li class="yellow-block_list_item">Личный успех</li>
                             <li class="yellow-block_list_item">Решение проблем</li>
-                            <br>
                         </ul>
                         <a href="#" class="yellow-block_link">Смотреть все...</a>
                     </div>
-                    
-                </div>                
-                
+                </div>
+
+
+
+                <!--Panel-->
+                <div class="container">
+                    <div class="panel-cust">Ваши продукты:</div>
+                </div>
+
+                <!--Price cards-->
+                <div class="[ card-grid -col5 ] -billing">
+                       <div class="card-grid_item">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="img/fig7.png" alt="">
+                                </div>
+                                <div class="card_name">Технология карьеры</div>
+                                <div class="card_price">35€</div>
+                                <a class="[ btn-cust -grey ]" href="#">Куплено</a>
+                            </div>
+                       </div>
+                       <div class="card-grid_item">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="img/fig8.png" alt="">
+                                </div>
+                                <div class="card_name">Технология карьеры</div>
+                                <div class="card_price">28€</div>
+                                <a class="[ btn-cust -grey ]" href="#">Куплено</a>
+                            </div>
+                       </div>
+                       <div class="card-grid_item">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="img/fig9.png" alt="">
+                                </div>
+                                <div class="card_name">Технология карьеры</div>
+                                <div class="card_price">28€</div>
+                                <a class="[ btn-cust -grey ]" href="#">Куплено</a>
+                            </div>
+                       </div>
+                       <div class="card-grid_item">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="img/fig10.png" alt="">
+                                </div>
+                                <div class="card_name">Технология карьеры</div>
+                                <div class="card_price">29€</div>
+                                <a class="[ btn-cust -grey ]" href="#">Куплено</a>
+                            </div>
+                       </div>
+                       <div class="card-grid_item">
+                            <div class="card">
+                                <div class="card_img">
+                                    <img src="img/fig7.png" alt="">
+                                </div>
+                                <div class="card_name">Технология карьеры</div>
+                                <div class="card_price">35€</div>
+                                <a class="[ btn-cust -grey ]" href="#">Куплено</a>
+                            </div>
+                       </div>
+                </div>
+
               </div>
               
             </div>

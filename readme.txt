@@ -14,9 +14,9 @@
 1. Главная - готова - http://test1.honcharovs.com/index.html
 2. Семинары - готова - http://test1.honcharovs.com/seminar.html
 3. Подробное описание товара - готова - http://test1.honcharovs.com/opisanie-tovara.html По этому пункту примечание: Вопрос с плеером открыт, т.к. плеер подходящий к сожалению я не нашел. Поэтому могу внешне оформить в дальнейшем тот, который установит Антон Дорошенко.
-4. Профиль пользователя - в процессе - тек ущая версия -> http://test1.honcharovs.com/opisanie-tovara.html
-5. Продукты - в процессе
-6. Биллинг - в процессе
+4. Профиль пользователя - http://test1.honcharovs.com/user-profile.html
+5. Продукты - http://test1.honcharovs.com/user-profile-products.html
+6. Биллинг - http://test1.honcharovs.com/user-profile-billing.html
 
 =================================
 Инфа
